@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+
+        <link rel="stylesheet" href="resources/css/bootstrap.min.css" >
+        <link rel="stylesheet" href="resources/css/bootstrap-theme.min.css">
+
+    </head>
+    <body class="container">
+        <h3>表单-水平表单</h3>
+        <p>通过为表单添加 .form-horizontal 类，并联合使用 Bootstrap 预置的栅格类，可以将 label 标签和控件组水平并排布局。这样做将改变 .form-group 的行为，使其表现为栅格系统中的行（row），因此就无需再额外添加 .row 了。</p>
+        <div class="container" style="border:1px solid black;">
+            <form action="" method="post" class="form-horizontal">
+                <div class="form-group">
+                    <label for="exampleInputEmail1" class="col-sm-3 control-label">Email address</label>
+                    <div class="col-sm-9">
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Please Input  Your Email"/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPass" class="col-sm-3 control-label">PassWord</label>
+                    <div class="col-sm-9">
+                        <input type="password" class="form-control" id="exampleInputPass" placeholder="Please Input  Your Password"/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-3 col-sm-9">
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox"> Remember me
+                        </label>
+                      </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-3 col-sm-2">
+                        <input type="submit" class="btn btn-default" value="Sign In"></input>
+                    </div>
+                    <div class="col-sm-offset-1 col-sm-3">
+                        <input type="reset" class="btn btn-default" value="Reset"></input>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </body>
+    <script src="resources/js/jquery-1.11.1.min.js"></script>
+    <script src="resources/js/bootstrap.js"></script>
+</html>
